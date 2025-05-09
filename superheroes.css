@@ -1,0 +1,156 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.cards-superheroes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 10px 0px 120px;
+  gap: 30px;
+  background-color: black;
+
+}
+
+@keyframes moveSideToSide {
+  0% {
+    transform: translateX(-100%); /* Empuja el contenedor fuera de la pantalla a la izquierda */
+}
+50% {
+    transform: translateX(0); /* Entra completamente en la pantalla */
+}
+100% {
+    transform: translateX(0%); /* Se mueve a la derecha, fuera de la pantalla */
+}
+}
+
+img {
+    width: 300px;
+    height: 500px;;
+    border-radius: 20px;
+    overflow: hidden; 
+    animation: moveSideToSide 10s infinite linear
+    
+}
+
+.cartas2{
+  width: 300px;
+  height: 550px;;
+  border-radius: 20px;
+  overflow: hidden; 
+  animation: moveSideToSide2 10s infinite linear;
+margin-bottom: 50px;
+  
+}
+
+@keyframes moveSideToSide2 {
+  0% {
+    transform: translateX(100%); /* Empuja el contenedor fuera de la pantalla a la izquierda */
+}
+50% {
+    transform: translateX(0); /* Entra completamente en la pantalla */
+}
+100% {
+    transform: translatex(0%); /* Se mueve a la derecha, fuera de la pantalla */
+}
+}
+
+
+
+
+.footer-video {
+    position: relative;
+    height: 250px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    border: 1px solid black;
+  }
+  
+  .footer-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.8; 
+  }
+  
+  .footer-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footer-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .footer-content p {
+    margin: 4px 0;
+    font-size: 16px;
+  }
+
+   @media (max-width: 768px) {
+            .cards-superheroes {
+            padding: 50px 0px 0px 65px;
+            display:flex;
+            flex-direction:column;
+             gap: 10px;
+
+            }
+            @keyframes moveSideToSide {
+            0% {
+              transform: translateX(0%); /* Empuja el contenedor fuera de la pantalla a la izquierda */
+            }
+            50% {
+              transform: translateX(0); /* Entra completamente en la pantalla */
+            }
+            100% {
+              transform: translateX(0%); /* Se mueve a la derecha, fuera de la pantalla */
+            }
+            }
+
+            img {
+            width: 250px;
+            height: 350px;;
+            border-radius: 20px;
+            overflow: hidden; 
+            animation: moveSideToSide 10s infinite linear;
+            
+        }
+
+        .cartas2  {
+
+           width: 250px;
+            height: 350px;;
+            border-radius: 20px;
+            overflow: hidden; 
+            animation: moveSideToSide 10s infinite linear;
+         
+
+        }
+
+            h1{
+            font-size:50px;
+           
+            }    
+            input {
+                    width: 100%;
+                    margin-left: 0;
+                }
+                button {
+                    width: 50%;
+                    margin-left: 0;
+                }
+              
+              }
